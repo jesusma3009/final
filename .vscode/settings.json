@@ -1,0 +1,15 @@
+{
+    "makefile.extensionOutputFolder": "./.vscode",
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "/home/jesus/Documentos/mp/final/bin",
+            "binaryPath": "/home/jesus/Documentos/mp/final/bin/pruebaConjunto",
+            "binaryArgs": []
+        },
+        {
+            "cwd": "/home/jesus/Documentos/mp/final/bin",
+            "binaryPath": "/home/jesus/Documentos/mp/final/bin/main",
+            "binaryArgs": []
+        }
+    ]
+}

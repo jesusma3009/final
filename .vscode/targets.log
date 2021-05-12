@@ -1,0 +1,324 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.3
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Wed May 12 21:32:27 2021
+
+# Variables
+
+# environment
+GDK_BACKEND = x11
+# environment
+LC_ALL = C
+# environment
+NO_AT_BRIDGE = 1
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-6124c181-8342-4af1-9116-88bf13889eec.sock
+# environment
+VSCODE_CWD = /home/jesus
+# default
+MAKE_COMMAND := make
+# environment
+GTK3_MODULES = xapp-gtk3-module
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# environment
+PWD = /home/jesus/Documentos/mp/final
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+MAIL = /var/spool/mail/jesus
+# environment
+XDG_DATA_DIRS = /home/jesus/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+# environment
+OLDPWD = /home/jesus
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+VSCODE_LOG_STACK = false
+# automatic
+%F = $(notdir $%)
+# environment
+LANG = C
+# environment
+XAUTHORITY = /home/jesus/.Xauthority
+# default
+.LOADED := 
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# makefile
+MAKEFLAGS = pqrR
+# makefile
+CURDIR := /home/jesus/Documentos/mp/final
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+MFLAGS = -pqrR
+# default
+.SHELLFLAGS := -c
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+VSCODE_CRASH_REPORTER_START_OPTIONS = {"companyName":"Microsoft","productName":"VSCode","submitURL":"appcenter://code?aid=fba07a4d-84bd-4fc8-a125-9640fc8ce171&uid=7c012f60-b85a-4348-bf9a-d0381be9a215&iid=7c012f60-b85a-4348-bf9a-d0381be9a215&sid=7c012f60-b85a-4348-bf9a-d0381be9a215","uploadToServer":true}
+# makefile (from 'makefile', line 1)
+MAKEFILE_LIST := makefile
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+VSCODE_PID = 1650
+# environment
+XDG_SESSION_TYPE = x11
+# environment
+CUDA_PATH = /opt/cuda
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+*F = $(notdir $*)
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+VSCODE_NLS_CONFIG = {"locale":"es","availableLanguages":{},"_languagePackSupport":true}
+# environment
+BREAKPAD_DUMP_LOCATION = /home/jesus/.config/Code/exthost Crash Reports
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# makefile
+SHELL = /bin/sh
+# default
+MAKECMDGOALS := all
+# environment
+DOTNET_BUNDLE_EXTRACT_BASE_DIR = /home/jesus/.cache/dotnet_bundle_extract
+# environment
+SHLVL = 2
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+PATH = /usr/local/sbin:/usr/local/bin:/usr/bin:/var/lib/snapd/snap/bin:/opt/cuda/bin:/opt/cuda/nsight_compute:/opt/cuda/nsight_systems/bin:/home/jesus/.dotnet/tools:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+# default
+MAKEFILES := 
+# environment
+LANGUAGE = es_ES.UTF-8
+# environment
+MOTD_SHOWN = pam
+# automatic
+^F = $(notdir $^)
+# environment
+INVOCATION_ID = a473b6bba4084ad484e6a52669f5ae51
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?F = $(notdir $?)
+# environment
+XDG_SEAT = seat0
+# automatic
++F = $(notdir $+)
+# environment
+DESKTOP_SESSION = bspwm
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+LOGNAME = jesus
+# environment
+XDG_VTNR = 1
+# makefile
+.DEFAULT_GOAL := all
+# environment
+SYSTEMD_EXEC_PID = 567
+# environment
+DISPLAY = :0
+# environment
+GTK_MODULES = canberra-gtk-module
+# environment
+USER = jesus
+# default
+MAKE_VERSION := 4.3
+# environment
+VSCODE_NODE_CACHED_DATA_DIR = /home/jesus/.config/Code/CachedData/cfa2e218100323074ac1948c885448fdf4de2a7f
+# environment
+_ = /usr/bin/make
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# environment
+JOURNAL_STREAM = 8:14994
+# environment
+XDG_SESSION_CLASS = user
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/services/extensions/node/extensionHostProcess
+# environment
+HOME = /home/jesus
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-a026a40c-1.56.0-main.sock
+# environment
+XDG_SESSION_ID = 1
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# default
+SUFFIXES := 
+# environment
+VSCODE_CLI = 1
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink guile load
+# environment
+LC_MESSAGES = es_ES.UTF-8
+# environment
+DOTNET_ROOT = /usr/share/dotnet
+# variable set hash-table stats:
+# Load=90/1024=9%, Rehash=0, Collisions=4/120=3%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 66305, inode 11669947): 10 files, no impossibilities.
+
+# 10 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+obj/main.o: src/main.cpp include/particula.h
+#  Implicit rule search has not been done.
+#  Last modified 2021-05-12 18:57:05.766466866
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'makefile', line 5):
+	g++ -g -c -o obj/main.o src/main.cpp -I ./include
+
+# Not a target:
+src/particula.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2021-05-12 12:53:59.515307357
+#  File has been updated.
+#  Successfully updated.
+
+obj/particula.o: src/particula.cpp include/particula.h
+#  Implicit rule search has not been done.
+#  Last modified 2021-05-12 18:57:06.319805819
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'makefile', line 7):
+	g++ -g -c -o obj/particula.o src/particula.cpp -I ./include
+
+# Not a target:
+src/main.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2021-05-12 18:47:06.341
+#  File has been updated.
+#  Successfully updated.
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'makefile', line 11):
+	echo limpiando...
+	rm obj/*.o
+
+obj/ConjuntoParticulas.o: src/ConjuntoParticulas.cpp include/ConjuntoParticulas.h
+#  Implicit rule search has not been done.
+#  Last modified 2021-05-12 18:57:06.786477225
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'makefile', line 9):
+	g++ -g -c -o obj/ConjuntoParticulas.o src/ConjuntoParticulas.cpp -I ./include
+
+# Not a target:
+src/ConjuntoParticulas.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2021-05-12 18:44:15.536455712
+#  File has been updated.
+#  Successfully updated.
+
+bin/main: obj/main.o obj/particula.o obj/ConjuntoParticulas.o
+#  Implicit rule search has not been done.
+#  Last modified 2021-05-12 18:57:06.943145483
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'makefile', line 3):
+	g++ -g -o bin/main obj/main.o obj/particula.o obj/ConjuntoParticulas.o
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all: bin/main
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+include/ConjuntoParticulas.h:
+#  Implicit rule search has been done.
+ 
+#  Last modified 2021-05-12 18:43:41.539582824
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+makefile:
+#  Implicit rule search has been done.
+#  Last modified 2021-05-12 18:56:12.919266704
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+include/particula.h:
+#  Implicit rule search has been done.
+#  Last modified 2021-05-12 12:05:44.582
+#  File has been updated.
+#  Successfully updated.
+
+# files hash-table stats:
+# Load=14/1024=1%, Rehash=0, Collisions=0/39=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 25 / storage = 279 B / avg = 11 B
+# current buf: size = 8162 B / used = 279 B / count = 25 / avg = 11 B
+
+# strcache performance: lookups = 41 / hit rate = 39%
+# hash-table stats:
+# Load=25/8192=0%, Rehash=0, Collisions=0/41=0%
+# Finished Make data base on Wed May 12 21:32:27 2021
+
+ 
