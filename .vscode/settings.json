@@ -11,5 +11,9 @@
             "binaryPath": "/home/jesus/Documentos/mp/final/bin/main",
             "binaryArgs": []
         }
-    ]
+    ],
+    "files.associations": {
+        "iostream": "cpp",
+        "new": "cpp"
+    }
 }

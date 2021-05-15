@@ -125,7 +125,10 @@ void Particula::Rotar(float posX, float posY, double rads) {
 
 std::string Particula::ToString() const{
     string s = "";
-    s = "(" + to_string(x) + ", " + to_string(y) + ")";
+    s = "(x: " + to_string(x) + ", y: " + to_string(y) + ", ";
+    s += " dx: " + to_string(dx) + ", dy: " + to_string(dy) + " R: " + to_string(radio) + ")";
+    
+    
     return s;
 }
 

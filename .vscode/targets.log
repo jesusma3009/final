@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed May 12 21:32:27 2021
+# Make data base, printed on Sat May 15 15:20:34 2021
 
 # Variables
 
@@ -17,7 +17,7 @@ LC_ALL = C
 # environment
 NO_AT_BRIDGE = 1
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-6124c181-8342-4af1-9116-88bf13889eec.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-ef986ab1-8937-4450-9a76-cad0c5d872ad.sock
 # environment
 VSCODE_CWD = /home/jesus
 # default
@@ -79,7 +79,7 @@ MAKEFILE_LIST := makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 1650
+VSCODE_PID = 31888
 # environment
 XDG_SESSION_TYPE = x11
 # environment
@@ -123,7 +123,7 @@ MOTD_SHOWN = pam
 # automatic
 ^F = $(notdir $^)
 # environment
-INVOCATION_ID = a473b6bba4084ad484e6a52669f5ae51
+INVOCATION_ID = 78e39bf60c334f2590cb0d33432b41b8
 # environment
 VSCODE_LOG_NATIVE = false
 # automatic
@@ -145,7 +145,7 @@ XDG_VTNR = 1
 # makefile
 .DEFAULT_GOAL := all
 # environment
-SYSTEMD_EXEC_PID = 567
+SYSTEMD_EXEC_PID = 619
 # environment
 DISPLAY = :0
 # environment
@@ -161,7 +161,7 @@ _ = /usr/bin/make
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
-JOURNAL_STREAM = 8:14994
+JOURNAL_STREAM = 8:21267
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -191,7 +191,7 @@ LC_MESSAGES = es_ES.UTF-8
 # environment
 DOTNET_ROOT = /usr/share/dotnet
 # variable set hash-table stats:
-# Load=90/1024=9%, Rehash=0, Collisions=4/120=3%
+# Load=90/1024=9%, Rehash=0, Collisions=4/123=3%
 
 # Pattern-specific Variable Values
 
@@ -199,9 +199,9 @@ DOTNET_ROOT = /usr/share/dotnet
 
 # Directories
 
-# . (device 66305, inode 11669947): 10 files, no impossibilities.
+# . (device 66305, inode 11669947): 11 files, no impossibilities.
 
-# 10 files, no impossibilities in 1 directories.
+# 11 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -211,7 +211,7 @@ DOTNET_ROOT = /usr/share/dotnet
 
 obj/main.o: src/main.cpp include/particula.h
 #  Implicit rule search has not been done.
-#  Last modified 2021-05-12 18:57:05.766466866
+#  Last modified 2021-05-13 19:36:38.923255558
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'makefile', line 5):
@@ -235,7 +235,7 @@ obj/particula.o: src/particula.cpp include/particula.h
 # Not a target:
 src/main.cpp:
 #  Implicit rule search has been done.
-#  Last modified 2021-05-12 18:47:06.341
+#  Last modified 2021-05-13 19:36:37.259905621
 #  File has been updated.
 #  Successfully updated.
 
@@ -249,24 +249,46 @@ clean:
 
 obj/ConjuntoParticulas.o: src/ConjuntoParticulas.cpp include/ConjuntoParticulas.h
 #  Implicit rule search has not been done.
-#  Last modified 2021-05-12 18:57:06.786477225
+#  Implicit/static pattern stem: ''
+#  Last modified 2021-05-13 19:34:19.08519053
 #  File has been updated.
-#  Successfully updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := obj/ConjuntoParticulas.o
+# automatic
+# * := 
+# automatic
+# < := src/ConjuntoParticulas.cpp
+# automatic
+# + := src/ConjuntoParticulas.cpp include/ConjuntoParticulas.h
+# automatic
+# % := 
+# automatic
+# ^ := src/ConjuntoParticulas.cpp include/ConjuntoParticulas.h
+# automatic
+# ? := src/ConjuntoParticulas.cpp
+# automatic
+# | := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/11=9%
 #  recipe to execute (from 'makefile', line 9):
 	g++ -g -c -o obj/ConjuntoParticulas.o src/ConjuntoParticulas.cpp -I ./include
 
 # Not a target:
 src/ConjuntoParticulas.cpp:
 #  Implicit rule search has been done.
-#  Last modified 2021-05-12 18:44:15.536455712
+#  Last modified 2021-05-15 15:20:32.84506344
 #  File has been updated.
 #  Successfully updated.
+ 
 
 bin/main: obj/main.o obj/particula.o obj/ConjuntoParticulas.o
 #  Implicit rule search has not been done.
-#  Last modified 2021-05-12 18:57:06.943145483
+#  Last modified 2021-05-13 19:36:39.029923289
 #  File has been updated.
-#  Successfully updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
 #  recipe to execute (from 'makefile', line 3):
 	g++ -g -o bin/main obj/main.o obj/particula.o obj/ConjuntoParticulas.o
 
@@ -281,13 +303,14 @@ all: bin/main
 #  Implicit rule search has been done.
 #  File does not exist.
 #  File has been updated.
-#  Successfully updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
 
 # Not a target:
 include/ConjuntoParticulas.h:
 #  Implicit rule search has been done.
- 
-#  Last modified 2021-05-12 18:43:41.539582824
+#  Last modified 2021-05-13 14:29:32.852096138
 #  File has been updated.
 #  Successfully updated.
 
@@ -299,6 +322,12 @@ makefile:
 #  Successfully updated.
 
 # Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
 include/particula.h:
 #  Implicit rule search has been done.
 #  Last modified 2021-05-12 12:05:44.582
@@ -306,19 +335,19 @@ include/particula.h:
 #  Successfully updated.
 
 # files hash-table stats:
-# Load=14/1024=1%, Rehash=0, Collisions=0/39=0%
+# Load=14/1024=1%, Rehash=0, Collisions=0/40=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 25 / storage = 279 B / avg = 11 B
-# current buf: size = 8162 B / used = 279 B / count = 25 / avg = 11 B
+# strcache buffers: 1 (0) / strings = 26 / storage = 284 B / avg = 10 B
+# current buf: size = 8162 B / used = 284 B / count = 26 / avg = 10 B
 
-# strcache performance: lookups = 41 / hit rate = 39%
+# strcache performance: lookups = 43 / hit rate = 39%
 # hash-table stats:
-# Load=25/8192=0%, Rehash=0, Collisions=0/41=0%
-# Finished Make data base on Wed May 12 21:32:27 2021
+# Load=26/8192=0%, Rehash=0, Collisions=0/43=0%
+# Finished Make data base on Sat May 15 15:20:34 2021
 
  

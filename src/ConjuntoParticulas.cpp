@@ -1,6 +1,4 @@
 #include "ConjuntoParticulas.h"
-#include "particula.h"
-#include <iostream>
 ConjuntoParticulas::ConjuntoParticulas()
 {
     Iniciar(MIN_SIZE);
@@ -26,16 +24,17 @@ void ConjuntoParticulas::AgregaParticula(const Particula p)
     if (utiles >= capacidad) Redimensiona(capacidad + 1);
     set[++utiles] = p;
 }
-void ConjuntoParticulas::Redimensiona(const int capacidad_nueva)
+void ConjuntoParticulas::Redimensiona(int capacidad_nueva)
 {
-    Particula *temp = new Particula[capacidad_nueva];
-
-    for (int i {0}; i < capacidad; i++)
-        temp[i] = set[i];
-    liberar();
-    set = temp;
+    int util_ant = utiles;
+    Particula *temp_set;
+    temp_set = new Particula[capacidad_nueva];
+    for (int i =0; i < utiles; i++)
+        temp_set[i] = set[i];
+    delete[] set;
+    set = temp_set;
     capacidad = capacidad_nueva;
-    utiles = capacidad_nueva - 1;
+    utiles = util_ant;
 }
 void ConjuntoParticulas::BorraParticula(const int pos)
 {
@@ -44,7 +43,7 @@ void ConjuntoParticulas::BorraParticula(const int pos)
     utiles--;
     Redimensiona(capacidad - 1);
 }
-void ConjuntoParticulas::ReemplazaParticula(const Particula p, const int pos)
+void ConjuntoParticulas::ReemplazaParticula(const int pos, const Particula p)
 {
     set[pos] = p;
 }
