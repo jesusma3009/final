@@ -1,7 +1,8 @@
 
-#include "particula.h"
+#include "Particula.h"
 #include "ConjuntoParticulas.h"
 #include <iostream>
+
 
 using namespace std;
 
@@ -10,40 +11,51 @@ const float ALTO = 800.0;
 
 void test1(string s) {
     cout << s << endl;
+    cout << "Prueba Constructores " << endl;
     ConjuntoParticulas cp1;
     ConjuntoParticulas cp2(10);
 }
 
 void test2(string s) {
     cout << s << endl;
-    ConjuntoParticulas cp1(7);
+    ConjuntoParticulas cp1(5);
 
+    cout << "Conjunto Inicial " << endl;
+    cp1.Mostrar();
+    
+    
     Particula nueva(5.0, 5.0, 0.0, 0.0, 5);
     int n = cp1.GetUtiles();
     for (int i = -1; i <= n + 1; i++)
         cp1.ReemplazaParticula(i, nueva);
+    
+    cout << "----- Después de reemplazar particulas ---- " << endl;
+    cp1.Mostrar();
 }
 
 void test3(string s) {
     cout << s << endl;
     ConjuntoParticulas cp1;
 
-    cout << "Capacidad " << cp1.GetCapacidad() << " utiles: " << cp1.GetUtiles() << endl;
-
-    int n = cp1.GetUtiles();
-    for (int i = 0; i < n+2; i++) {
+    cout << " ---- Conjunto Inicial ----" << endl;
+    cp1.Mostrar();
+    int n = 12;
+    for (int i = 0; i < n; i++) {
         Particula nueva;
         cp1.AgregaParticula(nueva);
     }
 
-    cout << "Capacidad " << cp1.GetCapacidad() << " utiles: " << cp1.GetUtiles() << endl;
+    cout << " ---- Conjunto Final -----" << endl;
+    cp1.Mostrar();
 }
 
 void test4(string s) {
     cout << s << endl;
     ConjuntoParticulas cp1(11);
 
-    cout << "Capacidad " << cp1.GetCapacidad() << " utiles: " << cp1.GetUtiles() << endl;
+
+    cout << " ---- Conjunto Inicial ----" << endl;
+    cp1.Mostrar();
 
     int n = cp1.GetUtiles();
     for (int i = 0; i < n; i++) {
@@ -51,7 +63,8 @@ void test4(string s) {
         if (nro > 0)
             cp1.BorraParticula(random() % nro);
     }
-    cout << "Capacidad " << cp1.GetCapacidad() << " utiles: " << cp1.GetUtiles() << endl;
+    cout << " ---- Conjunto Final -----" << endl;
+    cp1.Mostrar();
 }
 
 void test5(string s) {
@@ -60,7 +73,7 @@ void test5(string s) {
     // creación de objetos
     //---------------------------------------------------------
     ConjuntoParticulas nube(N);
-    for (int i = 0; i < 2000; i++) {
+    for (int i = 0; i < 100; i++) {
         if ((random() % 10) > 5)
             for (int j = 0; j < 7; j++) {
                 Particula nueva;
@@ -81,10 +94,10 @@ void test5(string s) {
 
 int main(void) {
 
-    test1("Test 1");
-    test2("Test 2");
-    test3("Test 3");
-    test4("Test 4");
-    test5("Test 5");
+    test1("\n************* Test 1 ************* ");
+    test2("\n************* Test 2 ************* ");
+    test3("\n************* Test 3 ************* ");
+    test4("\n************* Test 4 ************* ");
+    test5("\n************* Test 5 ************* ");
     return 0;
 }

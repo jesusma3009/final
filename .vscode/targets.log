@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon May 17 11:18:54 2021
+# Make data base, printed on Mon May 17 16:02:43 2021
 
 # Variables
 
@@ -17,7 +17,7 @@ LC_ALL = C
 # environment
 NO_AT_BRIDGE = 1
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-a06a2305-8b33-42ee-9367-3d0132399e5c.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-856a591a-7742-4e49-bdcf-9cf833b3da84.sock
 # environment
 VSCODE_CWD = /home/jesus
 # default
@@ -73,13 +73,14 @@ MFLAGS = -pqrR
 # environment
 VSCODE_CRASH_REPORTER_START_OPTIONS = {"companyName":"Microsoft","productName":"VSCode","submitURL":"appcenter://code?aid=fba07a4d-84bd-4fc8-a125-9640fc8ce171&uid=7c012f60-b85a-4348-bf9a-d0381be9a215&iid=7c012f60-b85a-4348-bf9a-d0381be9a215&sid=7c012f60-b85a-4348-bf9a-d0381be9a215","uploadToServer":true}
 # makefile (from 'makefile', line 1)
+ 
 MAKEFILE_LIST := makefile
 # automatic
 @F = $(notdir $@)
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 12738
+VSCODE_PID = 5592
 # environment
 XDG_SESSION_TYPE = x11
 # environment
@@ -123,7 +124,7 @@ MOTD_SHOWN = pam
 # automatic
 ^F = $(notdir $^)
 # environment
-INVOCATION_ID = 7f639dc6f2004b03aa5ef98437b8c166
+INVOCATION_ID = 8e90a62e051a468d9ceb26d3e28a20c2
 # environment
 VSCODE_LOG_NATIVE = false
 # automatic
@@ -145,7 +146,7 @@ XDG_VTNR = 1
 # makefile
 .DEFAULT_GOAL := all
 # environment
-SYSTEMD_EXEC_PID = 586
+SYSTEMD_EXEC_PID = 592
 # environment
 DISPLAY = :0
 # environment
@@ -155,13 +156,13 @@ USER = jesus
 # default
 MAKE_VERSION := 4.3
 # environment
-VSCODE_NODE_CACHED_DATA_DIR = /home/jesus/.config/Code/CachedData/cfa2e218100323074ac1948c885448fdf4de2a7f
+VSCODE_NODE_CACHED_DATA_DIR = /home/jesus/.config/Code/CachedData/054a9295330880ed74ceaedda236253b4f39a335
 # environment
 _ = /usr/bin/make
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
-JOURNAL_STREAM = 8:20734
+JOURNAL_STREAM = 8:19913
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -171,7 +172,7 @@ HOME = /home/jesus
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK = /run/user/1000/vscode-a026a40c-1.56.0-main.sock
+VSCODE_IPC_HOOK = /run/user/1000/vscode-a026a40c-1.56.2-main.sock
 # environment
 XDG_SESSION_ID = 1
 # default
@@ -191,7 +192,7 @@ LC_MESSAGES = es_ES.UTF-8
 # environment
 DOTNET_ROOT = /usr/share/dotnet
 # variable set hash-table stats:
-# Load=90/1024=9%, Rehash=0, Collisions=4/120=3%
+# Load=90/1024=9%, Rehash=0, Collisions=4/123=3%
 
 # Pattern-specific Variable Values
 
@@ -209,33 +210,44 @@ DOTNET_ROOT = /usr/share/dotnet
 
 # Files
 
-obj/main.o: src/main.cpp include/particula.h
+obj/main.o: src/main.cpp include/Particula.h
 #  Implicit rule search has not been done.
-#  Last modified 2021-05-15 16:01:51.6627466
+#  Implicit/static pattern stem: ''
+#  Last modified 2021-05-17 15:14:13.653290941
 #  File has been updated.
-#  Successfully updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := obj/main.o
+# automatic
+# * := 
+# automatic
+# < := src/main.cpp
+# automatic
+# + := src/main.cpp include/Particula.h
+# automatic
+# % := 
+# automatic
+# ^ := src/main.cpp include/Particula.h
+# automatic
+# ? := src/main.cpp include/Particula.h
+# automatic
+# | := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/11=9%
 #  recipe to execute (from 'makefile', line 5):
 	g++ -g -c -o obj/main.o src/main.cpp -I ./include
 
-# Not a target:
-src/particula.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2021-05-15 15:55:17.313923129
-#  File has been updated.
-#  Successfully updated.
-
-obj/particula.o: src/particula.cpp include/particula.h
+obj/Particula.o: src/Particula.cpp include/Particula.h
 #  Implicit rule search has not been done.
-#  Last modified 2021-05-15 16:01:52.162735947
-#  File has been updated.
-#  Successfully updated.
+#  Modification time never checked.
+#  File has not been updated.
 #  recipe to execute (from 'makefile', line 7):
-	g++ -g -c -o obj/particula.o src/particula.cpp -I ./include
+	g++ -g -c -o obj/Particula.o src/Particula.cpp -I ./include
 
 # Not a target:
 src/main.cpp:
 #  Implicit rule search has been done.
-#  Last modified 2021-05-15 15:23:48.940275113
+#  Last modified 2021-05-17 16:00:53.024943095
 #  File has been updated.
 #  Successfully updated.
 
@@ -247,28 +259,34 @@ clean:
 	echo limpiando...
 	rm obj/*.o
 
+# Not a target:
+src/Particula.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
 obj/ConjuntoParticulas.o: src/ConjuntoParticulas.cpp include/ConjuntoParticulas.h
 #  Implicit rule search has not been done.
-#  Last modified 2021-05-15 16:02:24.7154117
-#  File has been updated.
-#  Successfully updated.
+#  Modification time never checked.
+#  File has not been updated.
 #  recipe to execute (from 'makefile', line 9):
 	g++ -g -c -o obj/ConjuntoParticulas.o src/ConjuntoParticulas.cpp -I ./include
 
 # Not a target:
 src/ConjuntoParticulas.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2021-05-15 16:02:20.552158613
-#  File has been updated.
-#  Successfully updated.
-
-bin/main: obj/main.o obj/particula.o obj/ConjuntoParticulas.o
 #  Implicit rule search has not been done.
-#  Last modified 2021-05-15 16:02:24.818743054
+#  Modification time never checked.
+#  File has not been updated.
+
+bin/main: obj/main.o obj/Particula.o obj/ConjuntoParticulas.o
+#  Implicit rule search has not been done.
+#  Last modified 2021-05-17 15:55:42.81853384
 #  File has been updated.
-#  Successfully updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
 #  recipe to execute (from 'makefile', line 3):
-	g++ -g -o bin/main obj/main.o obj/particula.o obj/ConjuntoParticulas.o
+	g++ -g -o bin/main obj/main.o obj/Particula.o obj/ConjuntoParticulas.o
 
 # Not a target:
 .DEFAULT:
@@ -281,31 +299,38 @@ all: bin/main
 #  Implicit rule search has been done.
 #  File does not exist.
 #  File has been updated.
-#  Successfully updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
 
 # Not a target:
 include/ConjuntoParticulas.h:
-#  Implicit rule search has been done.
-#  Last modified 2021-05-15 15:39:36.572567313
-#  File has been updated.
-#  Successfully updated.
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # Not a target:
 makefile:
 #  Implicit rule search has been done.
-#  Last modified 2021-05-12 18:56:12.919266704
+#  Last modified 2021-05-17 16:02:41.423910326
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
-include/particula.h:
+include/Particula.h:
 #  Implicit rule search has been done.
-#  Last modified 2021-05-15 15:54:51.58350122
+#  Last modified 2021-05-17 16:01:42.436
 #  File has been updated.
 #  Successfully updated.
 
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
 # files hash-table stats:
-# Load=14/1024=1%, Rehash=0, Collisions=0/39=0%
+# Load=14/1024=1%, Rehash=0, Collisions=0/40=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
@@ -315,9 +340,9 @@ include/particula.h:
 # strcache buffers: 1 (0) / strings = 27 / storage = 293 B / avg = 10 B
 # current buf: size = 8162 B / used = 293 B / count = 27 / avg = 10 B
 
-# strcache performance: lookups = 43 / hit rate = 37%
+# strcache performance: lookups = 44 / hit rate = 38%
 # hash-table stats:
-# Load=27/8192=0%, Rehash=0, Collisions=0/43=0%
-# Finished Make data base on Mon May 17 11:18:55 2021
+# Load=27/8192=0%, Rehash=0, Collisions=0/44=0%
+# Finished Make data base on Mon May 17 16:02:43 2021
 
  

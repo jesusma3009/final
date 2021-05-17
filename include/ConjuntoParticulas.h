@@ -1,6 +1,6 @@
 #ifndef _CONJUNTOPARTICULA_
 #define _CONJUNTOPARTICULA_
-#include "particula.h"
+#include "Particula.h"
 #include <iostream>
 const int MIN_SIZE {5};
 using std::cout;
@@ -9,6 +9,7 @@ class ConjuntoParticulas
 {
     private:
         Particula *set;
+        Particula *temp_set;
         int capacidad;
         int utiles;
         void Redimensiona(int capacidad_nueva);
@@ -17,8 +18,8 @@ class ConjuntoParticulas
         ConjuntoParticulas(int tamanio);
         ConjuntoParticulas();
         void liberar();
-        int GetCapacidad() const { return capacidad; };
-        int GetUtiles() const { return utiles; };
+        int GetCapacidad();
+        int GetUtiles();
         void AgregaParticula(const Particula p);
         void BorraParticula(const int pos);
         Particula ObtieneParticula(int pos) const { return set[pos]; };

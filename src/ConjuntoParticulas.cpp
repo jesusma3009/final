@@ -27,7 +27,6 @@ void ConjuntoParticulas::AgregaParticula(const Particula p)
 void ConjuntoParticulas::Redimensiona(int capacidad_nueva)
 {
     int util_ant = utiles;
-    Particula *temp_set;
     temp_set = new Particula[capacidad_nueva];
     for (int i =0; i < utiles; i++)
         temp_set[i] = set[i];
@@ -63,4 +62,12 @@ void ConjuntoParticulas::Mostrar()
     cout << "Utiles: " << utiles << endl;
     for (int i {0}; i < utiles; i++)
         cout << set[i].ToString() << endl;
+}
+int ConjuntoParticulas::GetCapacidad()
+{
+    return capacidad;
+}
+int ConjuntoParticulas::GetUtiles()
+{
+    return utiles;
 }
