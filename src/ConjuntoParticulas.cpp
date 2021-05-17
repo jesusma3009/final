@@ -22,7 +22,7 @@ void ConjuntoParticulas::liberar()
 void ConjuntoParticulas::AgregaParticula(const Particula p)
 {
     if (utiles >= capacidad) Redimensiona(capacidad + 1);
-    set[++utiles] = p;
+    set[utiles++] = p;
 }
 void ConjuntoParticulas::Redimensiona(int capacidad_nueva)
 {
