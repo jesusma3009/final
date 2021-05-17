@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon May 17 16:02:43 2021
+# Make data base, printed on Mon May 17 17:05:00 2021
 
 # Variables
 
@@ -46,6 +46,7 @@ OLDPWD = /home/jesus
 VSCODE_LOG_STACK = false
 # automatic
 %F = $(notdir $%)
+ 
 # environment
 LANG = C
 # environment
@@ -73,7 +74,6 @@ MFLAGS = -pqrR
 # environment
 VSCODE_CRASH_REPORTER_START_OPTIONS = {"companyName":"Microsoft","productName":"VSCode","submitURL":"appcenter://code?aid=fba07a4d-84bd-4fc8-a125-9640fc8ce171&uid=7c012f60-b85a-4348-bf9a-d0381be9a215&iid=7c012f60-b85a-4348-bf9a-d0381be9a215&sid=7c012f60-b85a-4348-bf9a-d0381be9a215","uploadToServer":true}
 # makefile (from 'makefile', line 1)
- 
 MAKEFILE_LIST := makefile
 # automatic
 @F = $(notdir $@)
@@ -192,7 +192,7 @@ LC_MESSAGES = es_ES.UTF-8
 # environment
 DOTNET_ROOT = /usr/share/dotnet
 # variable set hash-table stats:
-# Load=90/1024=9%, Rehash=0, Collisions=4/123=3%
+# Load=90/1024=9%, Rehash=0, Collisions=4/120=3%
 
 # Pattern-specific Variable Values
 
@@ -212,37 +212,19 @@ DOTNET_ROOT = /usr/share/dotnet
 
 obj/main.o: src/main.cpp include/Particula.h
 #  Implicit rule search has not been done.
-#  Implicit/static pattern stem: ''
-#  Last modified 2021-05-17 15:14:13.653290941
+#  Last modified 2021-05-17 17:02:24.56996019
 #  File has been updated.
-#  Needs to be updated (-q is set).
-# automatic
-# @ := obj/main.o
-# automatic
-# * := 
-# automatic
-# < := src/main.cpp
-# automatic
-# + := src/main.cpp include/Particula.h
-# automatic
-# % := 
-# automatic
-# ^ := src/main.cpp include/Particula.h
-# automatic
-# ? := src/main.cpp include/Particula.h
-# automatic
-# | := 
-# variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=1/11=9%
+#  Successfully updated.
 #  recipe to execute (from 'makefile', line 5):
-	g++ -g -c -o obj/main.o src/main.cpp -I ./include
+	g++ -g -c -o obj/main.o src/main.cpp -I ./include -std=c++14
 
 obj/Particula.o: src/Particula.cpp include/Particula.h
 #  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Last modified 2021-05-17 17:02:24.869966877
+#  File has been updated.
+#  Successfully updated.
 #  recipe to execute (from 'makefile', line 7):
-	g++ -g -c -o obj/Particula.o src/Particula.cpp -I ./include
+	g++ -g -c -o obj/Particula.o src/Particula.cpp -I ./include -std=c++14
 
 # Not a target:
 src/main.cpp:
@@ -261,32 +243,33 @@ clean:
 
 # Not a target:
 src/Particula.cpp:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2021-05-17 16:01:32.848
+#  File has been updated.
+#  Successfully updated.
 
 obj/ConjuntoParticulas.o: src/ConjuntoParticulas.cpp include/ConjuntoParticulas.h
 #  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Last modified 2021-05-17 17:02:25.106638819
+#  File has been updated.
+#  Successfully updated.
 #  recipe to execute (from 'makefile', line 9):
-	g++ -g -c -o obj/ConjuntoParticulas.o src/ConjuntoParticulas.cpp -I ./include
+	g++ -g -c -o obj/ConjuntoParticulas.o src/ConjuntoParticulas.cpp -I ./include -std=c++14
 
 # Not a target:
 src/ConjuntoParticulas.cpp:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2021-05-17 16:15:59.494646309
+#  File has been updated.
+#  Successfully updated.
 
 bin/main: obj/main.o obj/Particula.o obj/ConjuntoParticulas.o
 #  Implicit rule search has not been done.
-#  Last modified 2021-05-17 15:55:42.81853384
+#  Last modified 2021-05-17 17:02:25.18997401
 #  File has been updated.
-#  Needs to be updated (-q is set).
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
+#  Successfully updated.
 #  recipe to execute (from 'makefile', line 3):
-	g++ -g -o bin/main obj/main.o obj/Particula.o obj/ConjuntoParticulas.o
+	g++ -g -o bin/main obj/main.o obj/Particula.o obj/ConjuntoParticulas.o -std=c++14
 
 # Not a target:
 .DEFAULT:
@@ -299,20 +282,19 @@ all: bin/main
 #  Implicit rule search has been done.
 #  File does not exist.
 #  File has been updated.
-#  Needs to be updated (-q is set).
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
+#  Successfully updated.
 
 # Not a target:
 include/ConjuntoParticulas.h:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2021-05-17 16:01:17.26212198
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
 makefile:
 #  Implicit rule search has been done.
-#  Last modified 2021-05-17 16:02:41.423910326
+#  Last modified 2021-05-17 17:02:18.023147591
 #  File has been updated.
 #  Successfully updated.
 
@@ -323,14 +305,8 @@ include/Particula.h:
 #  File has been updated.
 #  Successfully updated.
 
-# Not a target:
-.SUFFIXES:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
 # files hash-table stats:
-# Load=14/1024=1%, Rehash=0, Collisions=0/40=0%
+# Load=14/1024=1%, Rehash=0, Collisions=0/39=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
@@ -340,9 +316,9 @@ include/Particula.h:
 # strcache buffers: 1 (0) / strings = 27 / storage = 293 B / avg = 10 B
 # current buf: size = 8162 B / used = 293 B / count = 27 / avg = 10 B
 
-# strcache performance: lookups = 44 / hit rate = 38%
+# strcache performance: lookups = 43 / hit rate = 37%
 # hash-table stats:
-# Load=27/8192=0%, Rehash=0, Collisions=0/44=0%
-# Finished Make data base on Mon May 17 16:02:43 2021
+# Load=27/8192=0%, Rehash=0, Collisions=0/43=0%
+# Finished Make data base on Mon May 17 17:05:00 2021
 
  
