@@ -1,8 +1,5 @@
-make all --dry-run --always-make --keep-going --print-directory
+make bin/pruebaConjunto --dry-run --keep-going --print-directory
 make: Entering directory '/home/jesus/Documentos/mp/final'
-g++ -g -c -o obj/main.o src/main.cpp -I ./include -std=c++14
-g++ -g -c -o obj/Particula.o src/Particula.cpp -I ./include -std=c++14
-g++ -g -c -o obj/ConjuntoParticulas.o src/ConjuntoParticulas.cpp -I ./include -std=c++14
-g++ -g -o bin/main obj/main.o obj/Particula.o obj/ConjuntoParticulas.o -std=c++14
+g++ -g -o bin/pruebaConjunto obj/pruebaConjunto.o obj/Particula.o obj/ConjuntoParticulas.o -std=c++14
 make: Leaving directory '/home/jesus/Documentos/mp/final'
  

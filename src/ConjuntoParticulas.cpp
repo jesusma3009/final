@@ -1,16 +1,13 @@
 #include "ConjuntoParticulas.h"
-ConjuntoParticulas::ConjuntoParticulas()
-{
-    Iniciar(0);
-}
 ConjuntoParticulas::ConjuntoParticulas(int tamanio)
 {
     Iniciar(tamanio);
+    if (tamanio != 0) set = new Particula[tamanio];
+    else set = 0;
 }
 void ConjuntoParticulas::Iniciar(int tamanio)
 {
     utiles = tamanio;
-    set = new Particula[tamanio];
     capacidad = tamanio;
 }
 void ConjuntoParticulas::liberar()
@@ -74,11 +71,11 @@ void ConjuntoParticulas::Mostrar()
     for (int i {0}; i < utiles; i++)
         cout << set[i].ToString() << endl;
 }
-int ConjuntoParticulas::GetCapacidad()
+int ConjuntoParticulas::GetCapacidad() const
 {
     return capacidad;
 }
-int ConjuntoParticulas::GetUtiles()
+int ConjuntoParticulas::GetUtiles() const
 {
     return utiles;
 }

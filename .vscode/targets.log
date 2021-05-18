@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue May 18 01:57:58 2021
+# Make data base, printed on Tue May 18 13:26:22 2021
 
 # Variables
 
@@ -17,7 +17,7 @@ LC_ALL = C
 # environment
 NO_AT_BRIDGE = 1
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-17cf458b-1894-401a-9c33-34b304c2451f.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-0ffa5a1f-220f-409c-b1bc-4a893a9d400a.sock
 # environment
 VSCODE_CWD = /home/jesus
 # default
@@ -40,6 +40,7 @@ MAIL = /var/spool/mail/jesus
 XDG_DATA_DIRS = /home/jesus/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
 # environment
 OLDPWD = /home/jesus
+ 
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
@@ -79,7 +80,7 @@ MAKEFILE_LIST := makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 2539
+VSCODE_PID = 1984
 # environment
 XDG_SESSION_TYPE = x11
 # environment
@@ -123,7 +124,7 @@ MOTD_SHOWN = pam
 # automatic
 ^F = $(notdir $^)
 # environment
-INVOCATION_ID = 7c35f136276e4eac938ccb230a58b2f7
+INVOCATION_ID = 04b4cb800203471191aedffbd23b66ba
 # environment
 VSCODE_LOG_NATIVE = false
 # automatic
@@ -145,7 +146,7 @@ XDG_VTNR = 1
 # makefile
 .DEFAULT_GOAL := all
 # environment
-SYSTEMD_EXEC_PID = 586
+SYSTEMD_EXEC_PID = 566
 # environment
 DISPLAY = :0
 # environment
@@ -161,7 +162,7 @@ _ = /usr/bin/make
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
-JOURNAL_STREAM = 8:20763
+JOURNAL_STREAM = 8:22393
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -209,34 +210,41 @@ DOTNET_ROOT = /usr/share/dotnet
 
 # Files
 
-obj/main.o: src/main.cpp include/Particula.h
+bin/pruebaConjunto: obj/pruebaConjunto.o obj/Particula.o obj/ConjuntoParticulas.o
 #  Implicit rule search has not been done.
-#  Last modified 2021-05-17 17:56:09.2651764
-#  File has been updated.
-#  Successfully updated.
+#  Modification time never checked.
+#  File has not been updated.
 #  recipe to execute (from 'makefile', line 5):
-	g++ -g -c -o obj/main.o src/main.cpp -I ./include -std=c++14
+	g++ -g -o bin/pruebaConjunto obj/pruebaConjunto.o obj/Particula.o obj/ConjuntoParticulas.o -std=c++14
 
 obj/Particula.o: src/Particula.cpp include/Particula.h
 #  Implicit rule search has not been done.
 #  Last modified 2021-05-17 17:56:09.551849457
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'makefile', line 7):
+#  recipe to execute (from 'makefile', line 11):
 	g++ -g -c -o obj/Particula.o src/Particula.cpp -I ./include -std=c++14
 
 # Not a target:
-src/main.cpp:
+src/capturaOvnis.cpp:
 #  Implicit rule search has been done.
-#  Last modified 2021-05-17 16:00:53.024943095
+#  Last modified 2021-05-18 13:20:52.271744691
 #  File has been updated.
 #  Successfully updated.
+
+bin/capturaOvnis: obj/capturaOvnis.o obj/Particula.o obj/ConjuntoParticulas.o
+#  Implicit rule search has not been done.
+#  Last modified 2021-05-18 13:23:33.882357083
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'makefile', line 3):
+	g++ -g -o bin/capturaOvnis obj/capturaOvnis.o obj/Particula.o obj/ConjuntoParticulas.o -std=c++14 -lraylib
 
 clean:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'makefile', line 11):
+#  recipe to execute (from 'makefile', line 15):
 	echo limpiando...
 	rm obj/*.o
 
@@ -249,26 +257,18 @@ src/Particula.cpp:
 
 obj/ConjuntoParticulas.o: src/ConjuntoParticulas.cpp include/ConjuntoParticulas.h
 #  Implicit rule search has not been done.
-#  Last modified 2021-05-17 17:56:09.818522069
+#  Last modified 2021-05-18 13:23:02.548256163
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'makefile', line 9):
+#  recipe to execute (from 'makefile', line 13):
 	g++ -g -c -o obj/ConjuntoParticulas.o src/ConjuntoParticulas.cpp -I ./include -std=c++14
 
 # Not a target:
 src/ConjuntoParticulas.cpp:
 #  Implicit rule search has been done.
-#  Last modified 2021-05-17 17:55:59.281620518
+#  Last modified 2021-05-18 13:14:42.711560383
 #  File has been updated.
 #  Successfully updated.
-
-bin/main: obj/main.o obj/Particula.o obj/ConjuntoParticulas.o
-#  Implicit rule search has not been done.
-#  Last modified 2021-05-17 17:56:09.908524075
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'makefile', line 3):
-	g++ -g -o bin/main obj/main.o obj/Particula.o obj/ConjuntoParticulas.o -std=c++14
 
 # Not a target:
 .DEFAULT:
@@ -276,25 +276,38 @@ bin/main: obj/main.o obj/Particula.o obj/ConjuntoParticulas.o
 #  Modification time never checked.
 #  File has not been updated.
 
-all: bin/main
+all: bin/capturaOvnis
 #  Command line target.
 #  Implicit rule search has been done.
- 
 #  File does not exist.
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
+src/pruebaConjunto.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
 include/ConjuntoParticulas.h:
 #  Implicit rule search has been done.
-#  Last modified 2021-05-17 17:52:55.070847516
+#  Last modified 2021-05-18 13:11:25.577200209
 #  File has been updated.
 #  Successfully updated.
+
+obj/capturaOvnis.o: src/capturaOvnis.cpp include/Particula.h
+#  Implicit rule search has not been done.
+#  Last modified 2021-05-18 13:23:02.314917117
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'makefile', line 9):
+	g++ -g -c -o obj/capturaOvnis.o src/capturaOvnis.cpp -I ./include -std=c++14
 
 # Not a target:
 makefile:
 #  Implicit rule search has been done.
-#  Last modified 2021-05-17 17:02:18.023147591
+#  Last modified 2021-05-18 13:23:31.745638042
 #  File has been updated.
 #  Successfully updated.
 
@@ -305,20 +318,27 @@ include/Particula.h:
 #  File has been updated.
 #  Successfully updated.
 
+obj/pruebaConjunto.o: src/pruebaConjunto.cpp include/Particula.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'makefile', line 7):
+	g++ -g -c -o obj/pruebaConjunto.o src/pruebaConjunto.cpp -I ./include -std=c++14
+
 # files hash-table stats:
-# Load=14/1024=1%, Rehash=0, Collisions=0/39=0%
+# Load=17/1024=2%, Rehash=0, Collisions=0/48=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 27 / storage = 293 B / avg = 10 B
-# current buf: size = 8162 B / used = 293 B / count = 27 / avg = 10 B
+# strcache buffers: 1 (0) / strings = 30 / storage = 380 B / avg = 12 B
+# current buf: size = 8162 B / used = 380 B / count = 30 / avg = 12 B
 
-# strcache performance: lookups = 43 / hit rate = 37%
+# strcache performance: lookups = 52 / hit rate = 42%
 # hash-table stats:
-# Load=27/8192=0%, Rehash=0, Collisions=0/43=0%
-# Finished Make data base on Tue May 18 01:57:58 2021
+# Load=30/8192=0%, Rehash=0, Collisions=0/52=0%
+# Finished Make data base on Tue May 18 13:26:22 2021
 
  

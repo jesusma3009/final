@@ -15,11 +15,10 @@ class ConjuntoParticulas
         void Redimensiona(bool agrandar);
         void Iniciar(int tamanio);
     public:
-        ConjuntoParticulas(int tamanio);
-        ConjuntoParticulas();
+        ConjuntoParticulas(int tamanio = 0);
         void liberar();
-        int GetCapacidad();
-        int GetUtiles();
+        int GetCapacidad() const;
+        int GetUtiles() const;
         void AgregaParticula(const Particula p);
         void BorraParticula(const int pos);
         Particula ObtieneParticula(int pos) const { return set[pos]; };
