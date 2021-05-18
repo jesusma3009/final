@@ -2,17 +2,17 @@
 #define _CONJUNTOPARTICULA_
 #include "Particula.h"
 #include <iostream>
-const int MIN_SIZE {5};
+const int MIN_SIZE = 5;
+const int TAM_BLOQUE = 3;
 using std::cout;
 using std::endl;
 class ConjuntoParticulas
 {
     private:
         Particula *set;
-        Particula *temp_set;
         int capacidad;
         int utiles;
-        void Redimensiona(int capacidad_nueva);
+        void Redimensiona(bool agrandar);
         void Iniciar(int tamanio);
     public:
         ConjuntoParticulas(int tamanio);

@@ -1,5 +1,5 @@
 #include <iostream>
-#include "particula.h"
+#include "Particula.h"
 #include <cmath>
 
 using namespace std;

@@ -1,6 +1,6 @@
 
 #include "raylib.h"
-#include "particula.h"
+#include "Particula.h"
 
 const int screenWidth = 800;
 const int screenHeight = 450;

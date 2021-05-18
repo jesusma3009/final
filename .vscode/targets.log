@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon May 17 17:05:00 2021
+# Make data base, printed on Tue May 18 01:57:58 2021
 
 # Variables
 
@@ -17,7 +17,7 @@ LC_ALL = C
 # environment
 NO_AT_BRIDGE = 1
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-856a591a-7742-4e49-bdcf-9cf833b3da84.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-17cf458b-1894-401a-9c33-34b304c2451f.sock
 # environment
 VSCODE_CWD = /home/jesus
 # default
@@ -46,7 +46,6 @@ OLDPWD = /home/jesus
 VSCODE_LOG_STACK = false
 # automatic
 %F = $(notdir $%)
- 
 # environment
 LANG = C
 # environment
@@ -80,7 +79,7 @@ MAKEFILE_LIST := makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 5592
+VSCODE_PID = 2539
 # environment
 XDG_SESSION_TYPE = x11
 # environment
@@ -124,7 +123,7 @@ MOTD_SHOWN = pam
 # automatic
 ^F = $(notdir $^)
 # environment
-INVOCATION_ID = 8e90a62e051a468d9ceb26d3e28a20c2
+INVOCATION_ID = 7c35f136276e4eac938ccb230a58b2f7
 # environment
 VSCODE_LOG_NATIVE = false
 # automatic
@@ -146,7 +145,7 @@ XDG_VTNR = 1
 # makefile
 .DEFAULT_GOAL := all
 # environment
-SYSTEMD_EXEC_PID = 592
+SYSTEMD_EXEC_PID = 586
 # environment
 DISPLAY = :0
 # environment
@@ -162,7 +161,7 @@ _ = /usr/bin/make
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
-JOURNAL_STREAM = 8:19913
+JOURNAL_STREAM = 8:20763
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -212,7 +211,7 @@ DOTNET_ROOT = /usr/share/dotnet
 
 obj/main.o: src/main.cpp include/Particula.h
 #  Implicit rule search has not been done.
-#  Last modified 2021-05-17 17:02:24.56996019
+#  Last modified 2021-05-17 17:56:09.2651764
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'makefile', line 5):
@@ -220,7 +219,7 @@ obj/main.o: src/main.cpp include/Particula.h
 
 obj/Particula.o: src/Particula.cpp include/Particula.h
 #  Implicit rule search has not been done.
-#  Last modified 2021-05-17 17:02:24.869966877
+#  Last modified 2021-05-17 17:56:09.551849457
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'makefile', line 7):
@@ -250,7 +249,7 @@ src/Particula.cpp:
 
 obj/ConjuntoParticulas.o: src/ConjuntoParticulas.cpp include/ConjuntoParticulas.h
 #  Implicit rule search has not been done.
-#  Last modified 2021-05-17 17:02:25.106638819
+#  Last modified 2021-05-17 17:56:09.818522069
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'makefile', line 9):
@@ -259,13 +258,13 @@ obj/ConjuntoParticulas.o: src/ConjuntoParticulas.cpp include/ConjuntoParticulas.
 # Not a target:
 src/ConjuntoParticulas.cpp:
 #  Implicit rule search has been done.
-#  Last modified 2021-05-17 16:15:59.494646309
+#  Last modified 2021-05-17 17:55:59.281620518
 #  File has been updated.
 #  Successfully updated.
 
 bin/main: obj/main.o obj/Particula.o obj/ConjuntoParticulas.o
 #  Implicit rule search has not been done.
-#  Last modified 2021-05-17 17:02:25.18997401
+#  Last modified 2021-05-17 17:56:09.908524075
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'makefile', line 3):
@@ -280,6 +279,7 @@ bin/main: obj/main.o obj/Particula.o obj/ConjuntoParticulas.o
 all: bin/main
 #  Command line target.
 #  Implicit rule search has been done.
+ 
 #  File does not exist.
 #  File has been updated.
 #  Successfully updated.
@@ -287,7 +287,7 @@ all: bin/main
 # Not a target:
 include/ConjuntoParticulas.h:
 #  Implicit rule search has been done.
-#  Last modified 2021-05-17 16:01:17.26212198
+#  Last modified 2021-05-17 17:52:55.070847516
 #  File has been updated.
 #  Successfully updated.
 
@@ -319,6 +319,6 @@ include/Particula.h:
 # strcache performance: lookups = 43 / hit rate = 37%
 # hash-table stats:
 # Load=27/8192=0%, Rehash=0, Collisions=0/43=0%
-# Finished Make data base on Mon May 17 17:05:00 2021
+# Finished Make data base on Tue May 18 01:57:58 2021
 
  
