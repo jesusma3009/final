@@ -21,7 +21,7 @@ class ConjuntoParticulas
         int GetUtiles() const;
         void AgregaParticula(const Particula p);
         void BorraParticula(const int pos);
-        Particula ObtieneParticula(int pos) const { return set[pos]; };
+        Particula ObtieneParticula(int pos) const{ return set[pos]; };
         void ReemplazaParticula (const int pos, const Particula p);
         void Mover(const int ancho, const int alto);
         void Rebotar(const int ancho, const int alto);
