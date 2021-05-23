@@ -15,20 +15,6 @@ const int TAM_PARTICULAS = 10;
 const float  DESP = 5.0;
 bool haterminado = false;
 
-
-void pintarParticula(const  Particula & p, Color c)
-{
-    Vector2 pos = {p.GetX(), p.GetY()};
-    DrawCircleV(pos, p.GetRadio(), c);
-}
-
-void pintarConjunto(const ConjuntoParticulas &cp, Color c)
-{
-    int N = cp.GetUtiles();
-    for (int i = 0; i < N; i++)
-        pintarParticula(cp.ObtieneParticula(i), c);
-}
-
 char Direccion(){
     char dir = ' ';
         if (IsKeyDown(KEY_LEFT))

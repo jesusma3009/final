@@ -1,6 +1,6 @@
 all: bin/capturaOvnis
-bin/capturaOvnis: obj/capturaOvnis.o obj/Particula.o obj/ConjuntoParticulas.o
-	g++ -g -o bin/capturaOvnis obj/capturaOvnis.o obj/Particula.o obj/ConjuntoParticulas.o -std=c++14 -lraylib
+bin/capturaOvnis: obj/capturaOvnis.o obj/Particula.o obj/ConjuntoParticulas.o obj/Pintar.o
+	g++ -g -o bin/capturaOvnis obj/capturaOvnis.o obj/Particula.o obj/ConjuntoParticulas.o obj/Pintar.o -std=c++14 -lraylib
 bin/pruebaConjunto: obj/pruebaConjunto.o obj/Particula.o obj/ConjuntoParticulas.o
 	g++ -g -o bin/pruebaConjunto obj/pruebaConjunto.o obj/Particula.o obj/ConjuntoParticulas.o -std=c++14
 obj/pruebaConjunto.o: src/pruebaConjunto.cpp include/Particula.h
@@ -11,6 +11,8 @@ obj/Particula.o: src/Particula.cpp include/Particula.h
 	g++ -g -c -o obj/Particula.o src/Particula.cpp -I ./include -std=c++14
 obj/ConjuntoParticulas.o: src/ConjuntoParticulas.cpp include/ConjuntoParticulas.h
 	g++ -g -c -o obj/ConjuntoParticulas.o src/ConjuntoParticulas.cpp -I ./include -std=c++14
+obj/Pintar.o: src/Pintar.cpp include/Pintar.h
+	g++ -g -c -o obj/Pintar.o src/Pintar.cpp -I ./include -std=c++14
 clean:
 	echo limpiando...
 	rm obj/*.o
